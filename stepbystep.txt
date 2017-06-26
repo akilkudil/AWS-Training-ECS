@@ -1,0 +1,7 @@
+1. aws ecs create-cluster --cluster-name "my_cluster"
+2. aws ecs register-container-instance --cluster "my_cluster"
+3. aws ecs register-task-definitions --family "myfamily" --container-definitions 
+4. aws ecs start-task --cluster "my_cluster" --task-definition myfamily:1 --container-instances [This is used when we use our own scheduler]
+5. aws ecs end-task --task (Task Id/Arn)
+6.  aws ecs run-task --cluster "my_cluster" --task-definition myfamily:1  [Notice we do not give containerids as in case of start-task] . However we can place placement constraints and placement strategies.
+7. aws ecs create-service 
