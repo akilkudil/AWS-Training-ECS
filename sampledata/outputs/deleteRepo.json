@@ -1,0 +1,9 @@
+{
+    "repository": {
+        "registryId": "814129119746",
+        "repositoryName": "hopedockerrepo",
+        "repositoryArn": "arn:aws:ecr:us-east-1:814129119746:repository/hopedockerrepo",
+        "createdAt": 1498628032.0,
+        "repositoryUri": "814129119746.dkr.ecr.us-east-1.amazonaws.com/hopedockerrepo"
+    }
+}
