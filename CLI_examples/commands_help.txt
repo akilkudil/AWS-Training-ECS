@@ -14,6 +14,9 @@ Steps for docker usage in local machine: [in this example we create docker image
 5. Run: docker images. 
 This will list our docker images [In our case this should list demosite as an image]
 
+
+Running multiple service of same task definition in same instance (ECS container instance)
+
 Steps for pushing and managing image in AWS ECR :
 1. Authenticate docker to your default repo
 
@@ -61,8 +64,11 @@ Steps for using AWS ECS [  http://docs.aws.amazon.com/AmazonECS/latest/developer
 
 aws ecs create-cluster --cluster-name MyCluster
 
-2.  Launch an Instance with the Amazon ECS AMI
+2.  Launch an Instance with the Amazon ECS AMI or 
+create a free tier instance install docker and configure ECS agent
+
 http://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_container_instance.html
+http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-install.html
 
 3. List container instances
 
